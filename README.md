@@ -136,6 +136,72 @@ G = dT / dS
 ### 8.4 Limiting Case
 
 Low-gradient limit reduces to Special Relativity:
+G → γ⁻¹
+
+---
+
+## 9. Repository Structure
+
+MOSGM-Theory/
+│
+├── README.md
+├── LICENSE
+│
+├── docs/
+│ └── MOSGM_paper.pdf (coming soon)
+│
+├── diagrams/
+│ └── gradient_map.png (placeholder)
+│
+└── simulations/
+└── mosgm_model_v1.py (future release)
+
+---
+
+## 10. Diagrams
+
+Upcoming diagrams:
+
+- Multi-slope spacetime gradient surface  
+- Observer gradient difference graph  
+- Non-linear time-jump curve  
+
+*(Will be added in v2.2)*
+
+---
+
+## 11. Roadmap
+
+- Add detailed mathematical derivations  
+- Upload MOSGM v2.0 research paper  
+- Publish gradient diagrams  
+- Release Python simulation model  
+- Launch MOSGM v2.3  
+- Submit full paper to arXiv  
+
+---
+
+## 12. How to Cite
+
+Tarun Kumar,  
+**“Multi-Observer Spacetime Gradient Model (MOSGM)”**, 2025.  
+GitHub Repository:  
+https://github.com/Tarunrbt/MOSGM-Theory
+
+---
+
+## 13. License
+
+Released under the **MIT License**.  
+Use, modify, or distribute with proper attribution.
+
+---
+
+## 14. Version
+
+**v2.0 — Full Scientific README Upgrade (2025)**
+
+---
 
 
 
