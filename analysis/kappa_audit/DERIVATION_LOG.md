@@ -90,6 +90,42 @@ The diagnostic queries and aggregation were executed successfully in BigQuery. I
 
 <!-- Additional entries appended in sequence -->
 
+## Entry 002 — κ Bootstrap Sensitivity Script: Provenance Gap (K-AUDIT-002)
+
+**Date:** 2026-08-25
+
+**Contributor:** MOSGM analysis record
+
+**Step:** Provenance audit of the κ bootstrap sensitivity script
+(`analysis/kappa_audit/kappa_bootstrap_sensitivity.py`, commit `b432749`)
+and its referenced dataset `diag_stable_18`.
+
+**Input:**
+- `analysis/kappa_audit/kappa_bootstrap_sensitivity.py`
+- Commit `b432749`
+- Repository provenance and history relevant to `diag_stable_18`
+- `data/provenance/sparc_mass_models.md`
+- K-AUDIT-002 decision record in `DECISIONS.md`
+
+**Important status:** This is a **Provenance Audit**, not a bootstrap result. No κ value is computed or reported in this entry.
+
+**Result:**
+The committed script references `diag_stable_18`, but that dataset is not defined or supplied by the repository-contained inputs required for execution. Direct execution produces `NameError: name 'diag_stable_18' is not defined`. The provenance audit does not establish the dataset's membership, selection criteria, or source artifact sufficiently to reproduce the intended bootstrap input.
+
+The known 171-galaxy downstream population is not established as the source of `diag_stable_18`.
+
+**Evidence:**
+- `analysis/kappa_audit/kappa_bootstrap_sensitivity.py`
+- Commit `b432749`
+- Direct execution error: `NameError: name 'diag_stable_18' is not defined`
+- `data/provenance/sparc_mass_models.md`
+- `DECISIONS.md`, K-AUDIT-002
+
+**Verification:**
+The repository state was checked for the provenance required to reconstruct `diag_stable_18`. Independent reproduction of the bootstrap result is not possible from the repository-contained inputs as currently committed. This entry records the provenance gap and does not assert how or whether `diag_stable_18` was originally derived.
+
+**Status:** Provenance Gap / Script Blocked / κ unresolved
+
 ## Resolution Summary
 <!-- Filled only once audit concludes -->
 ## External Review
