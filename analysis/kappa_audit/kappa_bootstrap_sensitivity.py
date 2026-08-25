@@ -74,7 +74,7 @@ for seed in seeds:
 results_df = pd.DataFrame(all_results)
 
 print("\n===== BOOTSTRAP SENSITIVITY =====")
-display(results_df)
+print(results_df.to_string(index=False))
 
 print("\n===== LOWER 95% CI =====")
 print(results_df["lower_95"].describe())
